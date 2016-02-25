@@ -17,7 +17,7 @@ body{
 	padding: 0;
 	height: 100%;
 	width: 100%;
-	background-image: url("img/wood.jpg");
+	background-image: url("/img/wood.jpg");
 	background-size: cover;
 	font-family: "Suhag", Fallback, sans-serif;
 }
