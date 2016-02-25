@@ -9,7 +9,7 @@
         <title>Bloody Bitch</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="/style/style.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     </head>
     <body>
@@ -32,10 +32,10 @@
         <button onclick="changeDialogue()"></button>
 
         <footer class="footersocial">
-            <a href="https://github.com/p4suhag" target="_blank"><img src="img/github.png"></a>
-            <a href="https://www.facebook.com/psuhag1" target="_blank"><img src="img/fb.png"></a>
-            <a href="https://twitter.com/p4suhag" target="_blank"><img src="img/twtr.png"></a>
-            <a href="https://www.linkedin.com/in/p4suhag" target="_blank"><img src="img/linkedin.png"></a>
+            <a href="https://github.com/p4suhag" target="_blank"><img src="github.png"></a>
+            <a href="https://www.facebook.com/psuhag1" target="_blank"><img src="fb.png"></a>
+            <a href="https://twitter.com/p4suhag" target="_blank"><img src="twtr.png"></a>
+            <a href="https://www.linkedin.com/in/p4suhag" target="_blank"><img src="linkedin.png"></a>
         </footer>
 
 
@@ -50,7 +50,7 @@
         <script>
         
         function changeDialogue(){
-            $.getJSON('json/store.json', function(data){
+            $.getJSON('store.json', function(data){
             var noOfDialogue = data.bbstore.length;
             var randomNumber = Math.floor(Math.random() * noOfDialogue);
             var text = data.bbstore[randomNumber].name;
