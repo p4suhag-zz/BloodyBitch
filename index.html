@@ -49,9 +49,11 @@
 
         <script>
         
+        var count = 0;
+
         function changeDialogue(){
             $.getJSON('store.json', function(data){
-            var count = 0;
+            
             var noOfDialogue = data.bbstore.length;
             var randomNumber = Math.floor(Math.random() * noOfDialogue);
             var text = data.bbstore[randomNumber].name;
