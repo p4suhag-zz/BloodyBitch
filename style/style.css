@@ -1,0 +1,104 @@
+html{
+	margin: 0;
+	padding: 0;
+
+}
+@font-face {
+  font-family: 'Suhag';
+  src: url('GoodDog.otf'); /* IE9 Compat Modes */
+  src: url('GoodDog.otf?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('GoodDog.otff2') format('woff2'), /* Super Modern Browsers */
+       url('GoodDog.otff') format('woff'), /* Pretty Modern Browsers */
+       url('GoodDog.otf')  format('truetype'), /* Safari, Android, iOS */
+       
+}
+body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	background-image: url("wood.jpg");
+	background-size: cover;
+	font-family: "Suhag", Fallback, sans-serif;
+}
+
+.bloodybitch{
+   	color: white;
+   	position: fixed;
+   	top: 20px;
+   	left: 40px;
+   	margin: 0;
+   	letter-spacing: 4px;
+}
+.bloody{
+	margin-bottom: 10px;
+}
+.bitch{
+	position: fixed;
+	left: 45px;
+	margin: 0;
+}
+
+.dialogue{
+	position: fixed;
+	top: 28%;
+	
+	/*background-color: red;*/
+	width: 100%;
+	height: auto; 
+	color: white;
+	font-size: 60px;
+	letter-spacing: 4px;
+	margin: 0;
+	word-spacing: 15px;
+	text-align: center;
+	text-shadow: 2px 2px black;
+	
+}
+#dialoguetext{
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 30px;
+	margin-right: 30px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+
+button{
+	background-image: url("cmra2.svg");
+	background-size: cover;
+	height: 70px;
+	width: 70px;
+	position: fixed;
+	top: 80%;
+	left: 47%;
+	background-color: rgba(190,190,0,0.5);
+	border-radius: 20%;
+	border-color: white;
+}  
+button:focus{
+	outline: 0 !important;	
+}      
+ 
+.footersocial{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+
+} 
+img{
+	height: 50px;
+	width: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
