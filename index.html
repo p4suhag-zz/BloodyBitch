@@ -49,15 +49,20 @@
 
         <script>
         
+        var storeroom = [];
+        $.getJSON('/scripts/store.json', function(data){
+            storeroom = data.bbstore;
+        })
+
+        console.log(storeroom);
+
         function changeDialogue(){
-            $.getJSON('/scripts/store.json', function(data){
-            var noOfDialogue = data.bbstore.length;
+            
+            var noOfDialogue = storeroom.length;
             var randomNumber = Math.floor(Math.random() * noOfDialogue);
-            var text = data.bbstore[randomNumber].name;
+            var text = storeroom[randomNumber].name;
             document.getElementById('dialoguetext').innerHTML = text;
             
-            
-        });
         }
         
             //var noOfDialogue = bbstore.length;
