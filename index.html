@@ -39,39 +39,25 @@
         </footer>
 
 
-
-
-
-
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         
-        
-
         <script>
         
-        var count = 0;
+        var storeroom = [];
+        $.getJSON('/scripts/store.json', function(data){
+            storeroom = data.bbstore;
+        })
+
+        console.log(storeroom);
 
         function changeDialogue(){
-            $.getJSON('/BloodyBitch/scripts/store.json', function(data){
             
-            var noOfDialogue = data.bbstore.length;
+            var noOfDialogue = storeroom.length;
             var randomNumber = Math.floor(Math.random() * noOfDialogue);
-            var text = data.bbstore[randomNumber].name;
+            var text = storeroom[randomNumber].name;
             document.getElementById('dialoguetext').innerHTML = text;
-            count += 1;
-            console.log(count);
-        });
+            
         }
-        
-            //var noOfDialogue = bbstore.length;
-
-            /*function changeDialogue(){
-                var randomNumber = Math.floor(Math.random() * noOfDialogue);
-                var text = bbstore[randomNumber].name;
-                document.getElementById('dialogue').innerHTML = text;
-            }*/
-
-
         </script>
 
         <script>
