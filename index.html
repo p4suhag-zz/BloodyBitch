@@ -52,7 +52,7 @@
         var count = 0;
 
         function changeDialogue(){
-            $.getJSON(scripts/store.json', function(data){
+            $.getJSON('scripts/store.json', function(data){
             
             var noOfDialogue = data.bbstore.length;
             var randomNumber = Math.floor(Math.random() * noOfDialogue);
