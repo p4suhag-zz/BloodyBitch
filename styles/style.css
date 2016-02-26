@@ -92,8 +92,109 @@ img{
 	width: 50px;
 }
 
+/* Media Query Code Below this Line */
 
+@media screen and (max-width: 1100px) {
+	button{
+		top: 88%;
+	}
+}
+@media screen and (max-width: 800px) {
+	
+	button{
+		top: 87%;
+		height: 57px;
+		width: 57px;
+	}
 
+}
+@media screen and (max-width: 730px) {
+	button{
+		top: 90%;
+		left: 43%;
+		
+	}
+
+	.dialogue{
+		top: 25%;
+	}
+}
+@media screen and (max-width: 680px) {
+	button{
+		left: 10%;
+		height: 55px;
+		width: 55px;
+	}
+
+}
+
+@media screen and (max-width: 650px) {
+	button{
+		left: 10%;
+		height: 55px;
+		width: 55px;
+	}
+	.dialogue{
+		font-size: 50px;
+	}
+}
+
+@media screen and (max-width: 380px){
+	.dialogue{
+		font-size: 30px;
+	}
+	#dialoguetext{
+		
+		margin-left: 5px;
+		margin-right: 5px;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	button{
+		height: 50px;
+		width: 50px;
+		top: 90%;
+		left: 2%;	
+	}
+	.dialogue{
+		font-size: 45px;
+	}
+
+	.bloodybitch{
+   	    
+   	    top: 5px;
+   	    left: 40px;
+   	    margin-top: 0;
+	}
+	img{
+		height: 35px;
+		width: 35px;
+	}
+}
+
+@media screen and (max-height: 700px) and (min-width: 950px) {
+	.dialogue{
+		font-size: 55px;
+	}
+}
+@media screen and (max-height: 630px) and (min-width: 950px) {
+	button{
+		height: 60px;
+		width: 60px;
+		top: 88%;
+	}
+}
+@media screen and (max-height: 500px) and (min-width: 950px){
+	button{
+		height: 50px;
+		width: 50px;
+		top: 88%;
+		left: 5%;
+	}
+}
 
 
 
