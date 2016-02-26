@@ -32,10 +32,10 @@
         <button onclick="changeDialogue()"></button>
 
         <footer class="footersocial">
-            <a href="https://github.com/p4suhag" target="_blank"><img src="/pics/github.png"></a>
-            <a href="https://www.facebook.com/psuhag1" target="_blank"><img src="/pics/fb.png"></a>
+            <a href="https://github.com/p4suhag" target="_blank"><img src="/BloodyBitch/pics/github.png"></a>
+            <a href="https://www.facebook.com/psuhag1" target="_blank"><img src="/BloodyBitch/pics/fb.png"></a>
             <a href="https://twitter.com/p4suhag" target="_blank"><img src="pics/twtr.png"></a>
-            <a href="https://www.linkedin.com/in/p4suhag" target="_blank"><img src="/pics/linkedin.png"></a>
+            <a href="https://www.linkedin.com/in/p4suhag" target="_blank"><img src="/BloodyBitch/pics/linkedin.png"></a>
         </footer>
 
 
@@ -52,7 +52,7 @@
         var count = 0;
 
         function changeDialogue(){
-            $.getJSON('scripts/store.json', function(data){
+            $.getJSON('/BloodyBitch/scripts/store.json', function(data){
             
             var noOfDialogue = data.bbstore.length;
             var randomNumber = Math.floor(Math.random() * noOfDialogue);
