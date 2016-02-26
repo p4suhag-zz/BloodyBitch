@@ -5,11 +5,11 @@ html{
 }
 @font-face {
   font-family: 'Suhag';
-  src: url('font/GoodDog.otf'); /* IE9 Compat Modes */
-  src: url('font/GoodDog.otf?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('font/GoodDog.otff2') format('woff2'), /* Super Modern Browsers */
-       url('font/GoodDog.otff') format('woff'), /* Pretty Modern Browsers */
-       url('font/GoodDog.otf')  format('truetype'); /* Safari, Android, iOS */
+  src: url('/font/GoodDog.otf'); /* IE9 Compat Modes */
+  src: url('/font/GoodDog.otf?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/font/GoodDog.otff2') format('woff2'), /* Super Modern Browsers */
+       url('/font/GoodDog.otff') format('woff'), /* Pretty Modern Browsers */
+       url('/font/GoodDog.otf')  format('truetype'); /* Safari, Android, iOS */
        
 }
 body{
@@ -17,7 +17,7 @@ body{
 	padding: 0;
 	height: 100%;
 	width: 100%;
-	background-image: url("pics/wood.jpg");
+	background-image: url("/pics/wood.jpg");
 	background-size: cover;
 	font-family: "Suhag", Fallback, sans-serif;
 }
