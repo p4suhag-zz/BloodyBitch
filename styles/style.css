@@ -65,6 +65,7 @@ body{
 }
 
 
+
 button{
 	background-image: url("../pics/cmra2.svg");
 	background-size: cover;
@@ -76,10 +77,26 @@ button{
 	background-color: rgba(190,190,0,0.5);
 	border-radius: 20%;
 	border-color: white;
+	-webkit-animation: effectColor 4s infinite ease-in;
+	
+	animation: effectColor 4s infinite ease-in;
 }  
+@-webkit-keyframes effectColor {
+	from{ background-color: rgba(190,190,0,0.5); }
+	to{ background-color: rgba(0,190,0,0.5); }
+}
+@keyframes effectColor {
+	from{ background-color: rgba(190,190,0,0.5); }
+	to{ background-color: rgba(0,190,0,0.5); }
+}
+
 button:focus{
-	outline: 0 !important;	
-}      
+	outline: 0 !important;
+
+}  
+button:hover{
+	cursor: pointer;
+}    
  
 .footersocial{
 	position: fixed;
